@@ -1,0 +1,24 @@
+[project]
+name = "gpu-cng-2025"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "cupy-cuda12x>=13.4.1",
+    "cupy-xarray>=0.1.4",
+    "ipython>=9.2.0",
+    "jupyter>=1.1.1",
+    "numba>=0.61.2",
+    "nvtx>=0.2.11",
+    "xarray>=2025.3.1",
+]
+
+
+[[tool.uv.dependency-metadata]]
+name = "cupy-xarray"
+version = "0.1.4"
+requires-dist = ["numpy>=1.8.1", "scipy>=0.13.0", "six>=1.11.0"]
+
+[tool.uv.sources]
+cupy-xarray = { git = "https://github.com/xarray-contrib/cupy-xarray.git" }
