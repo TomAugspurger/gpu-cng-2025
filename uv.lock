@@ -361,7 +361,9 @@ dependencies = [
     { name = "ipython" },
     { name = "jupyter" },
     { name = "numba" },
+    { name = "numba-cuda" },
     { name = "nvtx" },
+    { name = "pynvjitlink-cu12" },
     { name = "xarray" },
 ]
 
@@ -372,7 +374,9 @@ requires-dist = [
     { name = "ipython", specifier = ">=9.2.0" },
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "numba", specifier = ">=0.61.2" },
+    { name = "numba-cuda", specifier = ">=0.9.0" },
     { name = "nvtx", specifier = ">=0.2.11" },
+    { name = "pynvjitlink-cu12", specifier = ">=0.5.2" },
     { name = "xarray", specifier = ">=2025.3.1" },
 ]
 
@@ -980,6 +984,18 @@ wheels = [
 ]
 
 [[package]]
+name = "numba-cuda"
+version = "0.9.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numba" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/47/7a/38b68b760838e01cdccc9927d2695b984e00ac61b5cce5e2e08f2af495c3/numba_cuda-0.9.0.tar.gz", hash = "sha256:4962ad4ff31ebb505b16e6505801465920b6b784d44a4a5b9d092ae70a64d3c2", size = 370994, upload_time = "2025-04-22T09:53:22.32Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/4a/15/9624bf57dbf660f89a51e4934f4f4487a1fe212ad4a6c9813d01a8a89809/numba_cuda-0.9.0-py3-none-any.whl", hash = "sha256:f39af20172b637bde7d8824fe4a2ca6fde31bce3b0807807b95989dc7274a884", size = 460081, upload_time = "2025-04-22T09:53:20.161Z" },
+]
+
+[[package]]
 name = "numpy"
 version = "2.2.5"
 source = { registry = "https://pypi.org/simple" }
@@ -1192,6 +1208,17 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/7c/2d/c3338d48ea6cc0feb8446d8e6937e1408088a72a39937982cc6111d17f84/pygments-2.19.1.tar.gz", hash = "sha256:61c16d2a8576dc0649d9f39e089b5f02bcd27fba10d8fb4dcc28173f7a45151f", size = 4968581, upload_time = "2025-01-06T17:26:30.443Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/8a/0b/9fcc47d19c48b59121088dd6da2488a49d5f72dacf8262e2790a1d2c7d15/pygments-2.19.1-py3-none-any.whl", hash = "sha256:9ea1544ad55cecf4b8242fab6dd35a93bbce657034b0611ee383099054ab6d8c", size = 1225293, upload_time = "2025-01-06T17:26:25.553Z" },
+]
+
+[[package]]
+name = "pynvjitlink-cu12"
+version = "0.5.2"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/4b/47/8ea4d75f26ec28613e0ccf05110cbcfcdb521600cc0d85132bc848aa37c0/pynvjitlink_cu12-0.5.2-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:867256718d887a5d8875a71e126a832977e92e7801ce4cf3c631d957f868b0c2", size = 43947722, upload_time = "2025-03-10T21:26:37.574Z" },
+    { url = "https://files.pythonhosted.org/packages/f4/3b/18481e2df36e17c0b94b74e0604fb0b8c4d7ca24f9a8b0df6f289858351b/pynvjitlink_cu12-0.5.2-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:8d3870af99e96e0c7b1354d6e1f18a94ad0c265e93e9503d324c6163ef00c2b1", size = 46197994, upload_time = "2025-03-10T21:26:41.432Z" },
+    { url = "https://files.pythonhosted.org/packages/a4/7b/5dee3271543345cea49dbe113a4f39abb0b1f6324dbb2fe3e8ec10e7b1b1/pynvjitlink_cu12-0.5.2-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:1c097175f3be9de061db5875cc12d627f4e66b40366839f7b1abe3ca45d8b8a9", size = 43947564, upload_time = "2025-03-10T21:26:45.768Z" },
+    { url = "https://files.pythonhosted.org/packages/38/21/cd93d3e2a88e9d751b36a3572f89241e4c65ce3b461c3d2caeb3961701d4/pynvjitlink_cu12-0.5.2-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:a43a521821b906428d69ae90cb5ead8d014f7bf50a8f72b122a58392949534ba", size = 46197920, upload_time = "2025-03-10T21:26:49.444Z" },
 ]
 
 [[package]]
